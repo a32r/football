@@ -12,27 +12,43 @@
 		div {
 			padding: 10px 10px;
 			border: 1px solid black;
+
+			&:hover {
+				font-weight: bold;
+			}
 		}
 
 		div:first-child, div:last-child {
 			width: 40%;
-			background-color: $guestTeamColor;
+			
+			&:hover {
+				background: linear-gradient(transparent, $hoverTeamColor);
+				// transition: background 2s;
+			}
 		}
 
 		div:first-child {
 			text-align: end;
-			background-color: $homeTeamColor;
 			border-radius: $teamRadius 0 0 $teamRadius;
+			background: linear-gradient(transparent, $homeTeamColor);
+		}
+
+		div:last-child {
+			border-radius: 0 $teamRadius $teamRadius 0;
+			background: linear-gradient(transparent, $guestTeamColor);
 		}
 
 		div:nth-child(2) {
 			width: 60px;
 			text-align: center;
-			font-weight: bold;
-			font-size: larger;
 			text-transform: uppercase;
-			background-color: $countColor;
+			background: $countColor;
 			margin: 0 4px;
 		}
+	}
+
+	.header {
+		font-weight: bold;
+		font-size: larger;
 	}
 }
