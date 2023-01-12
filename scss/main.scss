@@ -6,28 +6,32 @@
 	.header, .row {
 		display: flex;
 		flex-flow: row nowrap;
-		align-items: center;
+		align-items: stretch;
+		margin: 2px 0;
 
 		div {
-			margin: 2px 0;
 			padding: 10px 10px;
 			border: 1px solid black;
 		}
 
 		div:first-child, div:last-child {
 			width: 40%;
-			background-color: yellow;
+			background-color: $guestTeamColor;
 		}
 
 		div:first-child {
 			text-align: end;
-			background-color: lightgreen;
+			background-color: $homeTeamColor;
+			border-radius: $teamRadius 0 0 $teamRadius;
 		}
 
 		div:nth-child(2) {
-			width: 50px;
+			width: 60px;
 			text-align: center;
-			background-color: lightblue;
+			font-weight: bold;
+			font-size: larger;
+			text-transform: uppercase;
+			background-color: $countColor;
 			margin: 0 4px;
 		}
 	}
