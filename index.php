@@ -24,9 +24,9 @@ echo <<<HEADER
 <div class="pane">
 	<h3>Игра дома</h3>
 	<div class="header">
-		<div class="team1">Дома</div>
-		<div class="count">Счет</div>
-		<div class="team2">В гостях</div>
+		<div>Дома</div>
+		<div>Счёт</div>
+		<div>В гостях</div>
 	</div>
 HEADER;
 
@@ -39,9 +39,9 @@ for ($i = 1; $i <= $games; $i++) {
 	$count2=rand(0,7);
 	echo <<<ROW
 	<div class="row">
-		<div class="team1">$team1</div>
-		<div class="count">$count1 : $count2</div>
-		<div class="team2">$team2</div>
+		<div>$team1</div>
+		<div><span class="lCount">$count1</span> : <span class="rCount">$count2</span></div>
+		<div>$team2</div>
 	</div>
 ROW;
 }
@@ -49,5 +49,6 @@ ROW;
 ?>
 
 </div>
+<script src="js/app.min.js"></script>
 </body>
 </html>
