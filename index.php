@@ -40,7 +40,7 @@ for ($i = 1; $i <= $games; $i++) {
 	echo <<<ROW
 	<div class="row">
 		<div>$team1</div>
-		<div><span class="lCount">$count1</span> : <span class="rCount">$count2</span></div>
+		<div><span class="lCount">$count1</span> &nbsp:&nbsp <span class="rCount">$count2</span></div>
 		<div>$team2</div>
 	</div>
 ROW;
