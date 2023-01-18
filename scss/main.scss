@@ -2,6 +2,18 @@
 	display: flex;
 	flex-flow: column;
 	width: 45%;
+	// background: $homePaneColor;
+	background: linear-gradient(45deg, white, $homePaneColor);
+	padding: 30px;
+	border: solid 3px $homePaneBorderColor;
+	border-radius: $teamRadius;
+
+	h3 {
+		text-align: center;
+		text-transform: uppercase;
+		color: #005A00;
+		margin: 0 0 15px 0;
+	}
 
 	.header, .row {
 		display: flex;
@@ -22,7 +34,7 @@
 			width: 40%;
 			
 			&:hover {
-				background: linear-gradient(transparent, $hoverTeamColor);
+				background: linear-gradient(white, $hoverTeamColor);
 				// transition: background 2s;
 			}
 		}
@@ -30,12 +42,12 @@
 		div:first-child {
 			text-align: end;
 			border-radius: $teamRadius 0 0 $teamRadius;
-			background: linear-gradient(transparent, $homeTeamColor);
+			background: linear-gradient(white, $homeTeamColor);
 		}
 
 		div:last-child {
 			border-radius: 0 $teamRadius $teamRadius 0;
-			background: linear-gradient(transparent, $guestTeamColor);
+			background: linear-gradient(white, $guestTeamColor);
 		}
 
 		div:nth-child(2) {
