@@ -52,9 +52,9 @@ echo <<<HEADER
 <div class="pane">
 	<h3>Игра в гостях</h3>
 	<div class="header">
-		<div>Дома</div>
-		<div>Счёт</div>
 		<div>В гостях</div>
+		<div>Счёт</div>
+		<div>Дома</div>
 	</div>
 HEADER;
 
