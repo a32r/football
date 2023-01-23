@@ -3,6 +3,20 @@ body {
 	justify-content: space-around;
 }
 
+.pane:nth-of-type(2) {
+	background: linear-gradient(315deg, white 30%, $paneColor 30%);
+
+	.header, .row {
+		div:first-child {
+			background: linear-gradient(white, $guestTeamColor);
+		}
+
+		div:last-child {
+			background: linear-gradient(white, $homeTeamColor);
+		}
+	}
+}
+
 .pane {
 	display: flex;
 	flex-flow: column;
@@ -36,7 +50,7 @@ body {
 
 		div:first-child, div:last-child {
 			width: 40%;
-			
+
 			&:hover {
 				background: linear-gradient(white, $hoverTeamColor);
 				// transition: background 2s;
@@ -69,17 +83,5 @@ body {
 	.header {
 		font-weight: bold;
 		font-size: larger;
-	}
-}
-
-.pane:nth-of-type(2) {
-	background: linear-gradient(315deg, white 30%, $paneColor 30%);
-
-	div:first-child {
-		background: linear-gradient(white, $guestTeamColor);
-	}
-
-	div:last-child {
-		background: linear-gradient(white, $homeTeamColor);
 	}
 }
