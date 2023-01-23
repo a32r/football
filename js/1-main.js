@@ -3,7 +3,7 @@ $(document).ready(function() {
 	for (p = 0; p < panes.length; p++) {
 		pane = $('.pane').eq(p);
 		rows = pane.children('.row');
-		for (i = 1; i <= rows.length; i++) {
+		for (i = 0; i <= rows.length; i++) {
 			lCount = rows.find('.lCount').text()[i];
 			rCount = rows.find('.rCount').text()[i];
 			if (lCount < rCount) {
